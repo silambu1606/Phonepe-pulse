@@ -18,7 +18,7 @@ for i, row in agg_trans_df.iterrows():
         cursor.execute(sql, tuple(row))
         print("Record inserted")
         conn.commit()
-        
+# Reapeted for how many tables do you want.      
 cursor.execute('''CREATE TABLE agg_user(MyIndex INTEGER,state VARCHAR(50),year YEAR,
                 Quater INTEGER,Brand VARCHAR(50),Brand_count INTEGER,Brand_percentage FLOAT,
                 PRIMARY KEY (MyIndex))''')
